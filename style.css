@@ -1,0 +1,139 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+button {
+    cursor: pointer;
+
+}
+
+p {
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+  font-family: 'Work Sans', sans-serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+body {
+background-color: #FFF8E6;
+color:black;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Work Sans', sans-serif;
+font-size: 16px
+
+}
+
+
+.container {
+background-color: #ffffff;
+border: 2px solid #ffffff;
+width: 100%;
+max-width: 900px;
+border-radius: 10px;
+padding: 16px;
+box-shadow: 0 0 2px 2px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.question {
+font-size: 24px
+
+}
+
+.answers-container {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+
+}
+
+.answer:disabled {
+    cursor: not-allowed;
+  }
+
+
+.next-question {
+margin-top: 32px;
+}
+
+.button {
+    background-color: #A5E7FF;
+    color: #221717;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+    transition: filter 0.4s;
+   
+}   
+
+.button:not(:disabled):hover {
+    filter: brightness(0.8);
+  }
+
+  .final-message {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  
+  .final-message span {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .correct {
+    background-color: #81ffb9;
+  }
+  
+  .incorrect {
+    background-color: #ff9090;
+  }
+  
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #A5E7FF;
+    color: #371515;
+    width: 100%;
+    height: 68px;    
+    -ms-flex-item-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+    font-family: 'Work Sans', sans-serif;
+  }
+
+
+  
